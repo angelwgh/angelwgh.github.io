@@ -1,0 +1,780 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="transform 转换2d转换1transform：none | &amp;lt;transform-function&amp;gt;+
+
+默认值：none
+适用于：所有块级元素及某些内联元素
+
+transform:rotate(&amp;lt;angle&amp;gt;) 旋转一个角度
+
+transform:translate(&amp;lt;translation-value&amp;gt;[,&amp;lt;translation-value&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS变形">
+<meta property="og:url" content="http://yoursite.com/2016/11/14/CSS变形/index.html">
+<meta property="og:site_name" content="angelwgh's blog">
+<meta property="og:description" content="transform 转换2d转换1transform：none | &amp;lt;transform-function&amp;gt;+
+
+默认值：none
+适用于：所有块级元素及某些内联元素
+
+transform:rotate(&amp;lt;angle&amp;gt;) 旋转一个角度
+
+transform:translate(&amp;lt;translation-value&amp;gt;[,&amp;lt;translation-value&amp;">
+<meta property="og:updated_time" content="2016-11-14T12:43:27.365Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS变形">
+<meta name="twitter:description" content="transform 转换2d转换1transform：none | &amp;lt;transform-function&amp;gt;+
+
+默认值：none
+适用于：所有块级元素及某些内联元素
+
+transform:rotate(&amp;lt;angle&amp;gt;) 旋转一个角度
+
+transform:translate(&amp;lt;translation-value&amp;gt;[,&amp;lt;translation-value&amp;">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/14/CSS变形/"/>
+
+
+  <title> CSS变形 | angelwgh's blog </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">angelwgh's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-practice">
+          <a href="/works" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            练习
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS变形
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-14T20:34:33+08:00" content="2016-11-14">
+              2016-11-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS/CSS基本属性/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS基本属性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/14/CSS变形/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/14/CSS变形/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="transform-转换"><a href="#transform-转换" class="headerlink" title="transform 转换"></a>transform 转换</h2><h3 id="2d转换"><a href="#2d转换" class="headerlink" title="2d转换"></a>2d转换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">transform：none | &lt;transform-function&gt;+</div></pre></td></tr></table></figure>
+<ul>
+<li>默认值：none</li>
+<li><p>适用于：所有块级元素及某些内联元素</p>
+</li>
+<li><p><code>transform:rotate(&lt;angle&gt;)</code> 旋转一个角度</p>
+</li>
+<li><code>transform:translate(&lt;translation-value&gt;[,&lt;translation-value&gt;]?)</code> <ul>
+<li>在X轴[Y轴]?移动一个距离</li>
+<li>transform:translateX</li>
+<li>transform:translateY</li>
+<li>默认为0</li>
+<li>百分数参照物为当前盒子的大小</li>
+</ul>
+</li>
+<li><code>transform:scale(&lt;number&gt;[,&lt;number&gt;]?)</code><ul>
+<li>缩放倍数</li>
+<li>第二个参数省略默认跟第一个值相等</li>
+</ul>
+</li>
+<li><code>transform:skew(&lt;angle&gt;[,&lt;angle&gt;]?)</code><ul>
+<li>倾斜一个角度</li>
+<li>第二个参数默认为0</li>
+</ul>
+</li>
+</ul>
+<h4 id="transform-origin-定位坐标轴的原点"><a href="#transform-origin-定位坐标轴的原点" class="headerlink" title="transform-origin 定位坐标轴的原点"></a>transform-origin 定位坐标轴的原点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">transform-origin：[ &lt;percentage&gt; | &lt;length&gt; | left | center① | right ] [ &lt;percentage&gt; | &lt;length&gt; | top | center② | bottom ]?</div><div class="line"></div><div class="line">transform-origin:</div><div class="line">-ms-transform-origin:</div><div class="line">-moz-transform-origin:</div><div class="line">-webkit-transform-origin:</div></pre></td></tr></table></figure>
+<ul>
+<li>默认值：<code>50% 50%</code>，效果等同于center center</li>
+<li>适用于：所有块级元素及某些内联元素</li>
+<li>设置或检索对象以某个原点进行转换。 <ul>
+<li>该属性提供2个参数值。 </li>
+<li>如果提供两个，第一个用于横坐标，第二个用于纵坐标。 </li>
+<li>如果只提供一个，该值将用于横坐标；纵坐标将默认为50%。 </li>
+<li>如果提供3个，第三个用于z轴</li>
+</ul>
+</li>
+</ul>
+<h3 id="3d转换"><a href="#3d转换" class="headerlink" title="3d转换"></a>3d转换</h3><ul>
+<li>透视距离<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">perspective：none | &lt;length&gt;</div><div class="line">perspective:</div><div class="line">-ms-perspective:</div><div class="line">-moz-perspective:</div><div class="line">-webkit-perspective:</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>用在变换元素的容器上</p>
+<p><code>&lt;length&gt;</code>： 指定观察者距离「z=0」平面的距离，为元素及其内容应用透视变换。不允许负值 </p>
+<ul>
+<li>perspective-origin 设置透视点<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">perspective-origin：[ &lt;percentage&gt; | &lt;length&gt; | left | center① | right ] [ &lt;percentage&gt; | &lt;length&gt; | top | center② | bottom ]?</div><div class="line"></div><div class="line">perspective-origin:</div><div class="line">-ms-perspective-origin:</div><div class="line">-moz-perspective-origin:</div><div class="line">-webkit-perspective-origin:</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>语法跟<code>transform-origin</code>类似</p>
+<ul>
+<li>指定透视点的位置。 <ul>
+<li>该属性提供2个参数值。</li>
+<li>如果提供两个，第一个用于横坐标，第二个用于纵坐标。 </li>
+<li>如果只提供一个，该值将用于横坐标；纵坐标将默认为center。 </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>translate3d()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">translate3d()： 指定对象的3D位移。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略</div><div class="line">translatex()： 指定对象X轴（水平方向）的平移 </div><div class="line">translatey()： 指定对象Y轴（垂直方向）的平移</div><div class="line">translatez()： 指定对象Z轴的平移</div></pre></td></tr></table></figure>
+</li>
+<li><p>rotate3d()： 3d旋转</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">rotate3d()： 指定对象的3D旋转角度，其中前3个参数分别表示旋转的方向x,y,z，第4个参数表示旋转的角度，参数不允许省略</div><div class="line">rotatex()： 指定对象在x轴上的旋转角度 </div><div class="line">rotatey()： 指定对象在y轴上的旋转角度 </div><div class="line">rotatez()： 指定对象在z轴上的旋转角度</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>demo:<code>rotate(0,0,1,45deg)</code></p>
+<ul>
+<li><p>scale()： 3d缩放</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">scale3d()： 指定对象的3D缩放。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 </div><div class="line">scalez()： 指定对象的z轴缩放 </div><div class="line">scalex()： 指定对象X轴的（水平方向）缩放 </div><div class="line">scaley()： 指定对象Y轴的（垂直方向）缩放</div></pre></td></tr></table></figure>
+</li>
+<li><p>transform-style：设置一个3d平台，保留内部的3d空间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">transform-style：flat | preserve-3d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>默认值：flat</p>
+<pre><code>+ `flat`： 指定子元素位于此元素所在平面内 
++ `preserve-3d`： 指定子元素定位在三维空间内
++ 当该属性值为「preserve-3d」时，元素将会创建局部堆叠上下文。 
++ 决定一个变换元素看起来是处在三维空间还是平面内，需要该元素的父元素上定义 `&lt;&apos; transform-style &apos;&gt;` 属性。 
+</code></pre><ul>
+<li>backface-visibility<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">backface-visibility：visible | hidden</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>不可继承<br>默认值:<code>visible</code></p>
+<pre><code>+ `visible`： 指定元素背面可见，允许显示正面的镜像。 
++ `hidden`： 指定元素背面不可见 
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/14/CSS动画/" rel="next" title="CSS动画">
+                <i class="fa fa-chevron-left"></i> CSS动画
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/14/CSS布局/" rel="prev" title="CSS布局">
+                CSS布局 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/14/CSS变形/"
+           data-title="CSS变形" data-url="http://yoursite.com/2016/11/14/CSS变形/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="angelwgh" />
+          <p class="site-author-name" itemprop="name">angelwgh</p>
+          <p class="site-description motion-element" itemprop="description">wgh'blog</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/angelwgh" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#transform-转换"><span class="nav-number">1.</span> <span class="nav-text">transform 转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2d转换"><span class="nav-number">1.1.</span> <span class="nav-text">2d转换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#transform-origin-定位坐标轴的原点"><span class="nav-number">1.1.1.</span> <span class="nav-text">transform-origin 定位坐标轴的原点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3d转换"><span class="nav-number">1.2.</span> <span class="nav-text">3d转换</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">angelwgh</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"angelwgh"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,827 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="CSS文本样式字体
+font-size：  |  |  | 
+
+font-size:2em
+font-size:200%
+//以父元素的字体大小作为参照物
+
+font-family：[  |  ] #
+
+body { font-family: helvetica, verdana, sans-serif; }
+//可以用逗号分隔设置多个字体
+
+font-weight：normal | bold |">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS文本">
+<meta property="og:url" content="http://yoursite.com/2016/11/14/CSS文本/index.html">
+<meta property="og:site_name" content="angelwgh's blog">
+<meta property="og:description" content="CSS文本样式字体
+font-size：  |  |  | 
+
+font-size:2em
+font-size:200%
+//以父元素的字体大小作为参照物
+
+font-family：[  |  ] #
+
+body { font-family: helvetica, verdana, sans-serif; }
+//可以用逗号分隔设置多个字体
+
+font-weight：normal | bold |">
+<meta property="og:updated_time" content="2016-11-14T12:43:09.357Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS文本">
+<meta name="twitter:description" content="CSS文本样式字体
+font-size：  |  |  | 
+
+font-size:2em
+font-size:200%
+//以父元素的字体大小作为参照物
+
+font-family：[  |  ] #
+
+body { font-family: helvetica, verdana, sans-serif; }
+//可以用逗号分隔设置多个字体
+
+font-weight：normal | bold |">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/14/CSS文本/"/>
+
+
+  <title> CSS文本 | angelwgh's blog </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">angelwgh's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-practice">
+          <a href="/works" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            练习
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS文本
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-14T20:36:16+08:00" content="2016-11-14">
+              2016-11-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS/CSS基本属性/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS基本属性</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/14/CSS文本/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/14/CSS文本/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="CSS文本样式"><a href="#CSS文本样式" class="headerlink" title="CSS文本样式"></a>CSS文本样式</h2><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><blockquote>
+<p>font-size： <length> | <percentage> | <absolute-size> | <relative-size></relative-size></absolute-size></percentage></length></p>
+</blockquote>
+<pre><code>font-size:2em
+font-size:200%
+//以父元素的字体大小作为参照物
+</code></pre><blockquote>
+<p>font-family：[ <family-name> | <generic-family> ] #</generic-family></family-name></p>
+</blockquote>
+<pre><code>body { font-family: helvetica, verdana, sans-serif; }
+//可以用逗号分隔设置多个字体
+</code></pre><blockquote>
+<p>font-weight：normal | bold | bolder | lighter | <integer></integer></p>
+<p><integer>： 用数字表示文本字体粗细。取值范围：100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</integer></p>
+</blockquote>
+<pre><code>body { font-weight：blod; }
+</code></pre><blockquote>
+<p>font-style：normal | italic | oblique<br>normal： 指定文本字体样式为正常的字体<br>italic： 指定文本字体样式为斜体。对于没有设计斜体的特殊字体，如果要使用斜体外观将应用oblique<br>oblique： 指定文本字体样式为倾斜的字体。人为的使文字倾斜，而不是去选取字体中的斜体字 </p>
+</blockquote>
+<pre><code>body{font-style:normal}
+</code></pre><blockquote>
+<p>line-height：normal | <length> | <percentage> | <number></number></percentage></length></p>
+</blockquote>
+<pre><code>line-height:3em;
+line-height:300%;//子元素继承计算后的值
+line-height:3;//子元素直接继承
+</code></pre><blockquote>
+<p>font：[ [ &lt;’ font-style ‘&gt; || &lt;’ font-variant ‘&gt; || &lt;’ font-weight ‘&gt; ]? &lt;’ font-size ‘&gt; [ / &lt;’ line-height ‘&gt; ]? &lt;’ font-family ‘&gt; ] | caption | icon | menu | message-box | small-caption | status-bar</p>
+</blockquote>
+<pre><code>font:italic bold 20px/1.5 arial,serif
+// &lt;&apos; font-size &apos;&gt; 和 &lt;&apos; font-family &apos;&gt; 是不可忽略的。 
+</code></pre><blockquote>
+<p>color:red  设置字体颜色</p>
+</blockquote>
+<h3 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h3><ul>
+<li>水平对齐</li>
+</ul>
+<blockquote>
+<p>text-align：left | right | center | justify<br>样式可继承</p>
+</blockquote>
+<ul>
+<li>垂直对齐</li>
+</ul>
+<blockquote>
+<p>vertical-align：baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length></length></percentage></p>
+</blockquote>
+<ul>
+<li>首行缩进</li>
+</ul>
+<blockquote>
+<p>text-indent：[ <length> | <percentage> ] </percentage></length></p>
+</blockquote>
+<h3 id="格式处理"><a href="#格式处理" class="headerlink" title="格式处理"></a>格式处理</h3><blockquote>
+<p>white-space：normal | pre | nowrap | pre-wrap | pre-line</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">换行符</th>
+<th style="text-align:left">空格和tabs</th>
+<th style="text-align:left">是否自动换行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">合并</td>
+<td style="text-align:left">合并</td>
+<td style="text-align:left">是</td>
+</tr>
+<tr>
+<td style="text-align:left">nowrap</td>
+<td style="text-align:left">合并</td>
+<td style="text-align:left">合并</td>
+<td style="text-align:left">否</td>
+</tr>
+<tr>
+<td style="text-align:left">pre</td>
+<td style="text-align:left">不合并</td>
+<td style="text-align:left">不合并</td>
+<td style="text-align:left">否</td>
+</tr>
+<tr>
+<td style="text-align:left">pre-wrap</td>
+<td style="text-align:left">不合并</td>
+<td style="text-align:left">不合并</td>
+<td style="text-align:left">是</td>
+</tr>
+<tr>
+<td style="text-align:left">pre-line</td>
+<td style="text-align:left">不合并</td>
+<td style="text-align:left">合并</td>
+<td style="text-align:left">是</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>word-wrap：normal | break-word 允许长单词自动环行</p>
+<p>word-break：normal | keep-all | break-all 允许单词内环行</p>
+</blockquote>
+<h3 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h3><blockquote>
+<p>text-shadow：none | <shadow> [ , <shadow> ]*</shadow></shadow></p>
+<p><shadow> = <length>{2,3} &amp;&amp; <color>?</color></length></shadow></p>
+</blockquote>
+<pre><code>text-shadow:1px 2px 3px #f00
+x轴偏移、y轴偏移、阴影模糊半径；color默认是文字颜色
+</code></pre><blockquote>
+<p>text-decoration:none | underline | overline | line-through | blink </p>
+</blockquote>
+<h3 id="高级修饰"><a href="#高级修饰" class="headerlink" title="高级修饰"></a>高级修饰</h3><p>文字溢出显示</p>
+<blockquote>
+<p>text-overflow：clip | ellipsis<br>ellipsis： 当内联内容溢出块容器时，将溢出部分替换为（…）。<br>跟white-space:nowrap;overflow:hidden;配合使用</p>
+</blockquote>
+<p>鼠标形状</p>
+<blockquote>
+<p>cursor:：[<url> [<x> <y>]?,]*[ auto | default | none | help | pointer | zoom-in | zoom-out | move ] </y></x></url></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/14/CSS布局/" rel="next" title="CSS布局">
+                <i class="fa fa-chevron-left"></i> CSS布局
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/14/CSS盒模型/" rel="prev" title="CSS盒模型">
+                CSS盒模型 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/14/CSS文本/"
+           data-title="CSS文本" data-url="http://yoursite.com/2016/11/14/CSS文本/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="angelwgh" />
+          <p class="site-author-name" itemprop="name">angelwgh</p>
+          <p class="site-description motion-element" itemprop="description">wgh'blog</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/angelwgh" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS文本样式"><span class="nav-number">1.</span> <span class="nav-text">CSS文本样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字体"><span class="nav-number">1.1.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对齐方式"><span class="nav-number">1.2.</span> <span class="nav-text">对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#格式处理"><span class="nav-number">1.3.</span> <span class="nav-text">格式处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本修饰"><span class="nav-number">1.4.</span> <span class="nav-text">文本修饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级修饰"><span class="nav-number">1.5.</span> <span class="nav-text">高级修饰</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">angelwgh</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"angelwgh"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
