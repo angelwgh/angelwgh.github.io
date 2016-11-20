@@ -112,7 +112,7 @@ str.charAt(index) 返回字符串中指定位置的字符。1str.charAt(index)
 描述
 
 字符串中的字符从左向右索引，第一个字符的索引值为 0，最后一个字符（假设该字符位于字符串 stringName 中）的索引值为 strin">
-<meta property="og:updated_time" content="2016-11-20T11:31:06.048Z">
+<meta property="og:updated_time" content="2016-11-20T11:52:02.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js字符串String方法">
 <meta name="twitter:description" content="str.length 返回一个字符串的长度1str.length
@@ -559,6 +559,50 @@ str.charAt(index) 返回字符串中指定位置的字符。1str.charAt(index)
 </li>
 </ul>
 <p><strong>注意：</strong>slice() 提取的新字符串包括beginSlice但不包括 endSlice。</p>
+<h4 id="substr-方法返回字符串中从指定位置开始到指定长度的子字符串。"><a href="#substr-方法返回字符串中从指定位置开始到指定长度的子字符串。" class="headerlink" title="substr() 方法返回字符串中从指定位置开始到指定长度的子字符串。"></a>substr() 方法返回字符串中从指定位置开始到指定长度的子字符串。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.substr(start[, length])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>start<ul>
+<li>开始提取字符的位置。如果为负值，则被看作 strLength + start，其中 strLength 为字符串的长度（例如，如果 start 为 -3，则被看作 strLength-3）。</li>
+</ul>
+</li>
+<li>length<ul>
+<li>可选。提取的字符数。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>描述<ul>
+<li>start 是一个字符的索引。首字符的索引为 0，最后一个字符的索引为 字符串的长度减去1。substr 从 start 位置开始提取字符，提取 length 个字符（或直到字符串的末尾）。</li>
+<li>如果 start 为正值，且大于或等于字符串的长度，则 substr 返回一个空字符串。</li>
+<li>如果 start 为负值，则 substr 把它作为从字符串末尾开始的一个字符索引。如果 start 为负值且 abs(start) 大于字符串的长度，则 substr 使用 0 作为开始提取的索引。注意负的 start 参数不被 Microsoft JScript 所支持。</li>
+<li>如果 length 为 0 或负值，则 substr 返回一个空字符串。如果忽略 length，则 substr 提取字符，直到字符串末尾。</li>
+</ul>
+</li>
+</ul>
+<h4 id="split-通过把字符串分割成子字符串来把一个-String-对象分割成一个字符串数组。"><a href="#split-通过把字符串分割成子字符串来把一个-String-对象分割成一个字符串数组。" class="headerlink" title="split() 通过把字符串分割成子字符串来把一个 String 对象分割成一个字符串数组。"></a>split() 通过把字符串分割成子字符串来把一个 String 对象分割成一个字符串数组。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.split([separator][, limit])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>separator<ul>
+<li>指定用来分割字符串的字符（串）。separator 可以是一个字符串或正则表达式。 如果忽略 separator，则返回整个字符串的数组形式。如果 separator 是一个空字符串，则 str 将会把原字符串中每个字符的数组形式返回。</li>
+</ul>
+</li>
+<li>limit<ul>
+<li>一个整数，限定返回的分割片段数量。split 方法仍然分割每一个匹配的 separator，但是返回的数组只会截取最多 limit 个元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>描述<ul>
+<li>split 方法返回一个数组。</li>
+<li>当找到一个 seperator 时，separator 会从字符串中被移除，返回存进一个数组当中的子字符串。如果忽略 separator 参数，则返回的数组包含一个元素，该元素是原字符串。如果 separator 是一个空字符串，则 str 将被转换为由字符串中字符组成的一个数组。</li>
+<li>如果 separator 是一个正则表达式，且包含捕获括号（capturing parentheses），则每次匹配到 separator 时，捕获括号匹配的结果将会插入到返回的数组中。然而，不是所有浏览器都支持该特性。</li>
+</ul>
+</li>
+</ul>
+<h4 id="toLowerCase-装换成小写字母并返回"><a href="#toLowerCase-装换成小写字母并返回" class="headerlink" title="toLowerCase() 装换成小写字母并返回"></a>toLowerCase() 装换成小写字母并返回</h4>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.toLowerCase()</div></pre></td></tr></table></figure>
+<p>toLowerCase 会将调用该方法的字符串值转为小写形式，并返回。toLowerCase 不会影响字符串本身的值。</p>
+<h4 id="toUpperCase-装换成大写字母并返回"><a href="#toUpperCase-装换成大写字母并返回" class="headerlink" title="toUpperCase() 装换成大写字母并返回"></a>toUpperCase() 装换成大写字母并返回</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">toUpperCase 将调用该方法的字符串值转换为大写形式，并返回。toUpperCase 方法不影响字符串本身的值。</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -597,6 +641,10 @@ str.charAt(index) 返回字符串中指定位置的字符。1str.charAt(index)
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/20/js对象/" rel="prev" title="js对象">
+                js对象 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -668,7 +716,7 @@ str.charAt(index) 返回字符串中指定位置的字符。1str.charAt(index)
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -725,7 +773,7 @@ str.charAt(index) 返回字符串中指定位置的字符。1str.charAt(index)
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#str-length-返回一个字符串的长度"><span class="nav-number">1.</span> <span class="nav-text">str.length 返回一个字符串的长度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-charAt-index-返回字符串中指定位置的字符。"><span class="nav-number">2.</span> <span class="nav-text">str.charAt(index) 返回字符串中指定位置的字符。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-indexOf-返回指定值在字符串对象中首次出现的位置"><span class="nav-number">3.</span> <span class="nav-text">str.indexOf() 返回指定值在字符串对象中首次出现的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-search-看该字符串对象与一个正则表达式是否匹配。"><span class="nav-number">4.</span> <span class="nav-text">str.search() 看该字符串对象与一个正则表达式是否匹配。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-match-当字符串匹配到正则表达式时，提取匹配项"><span class="nav-number">5.</span> <span class="nav-text">str.match() 当字符串匹配到正则表达式时，提取匹配项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-replace-字符串替换"><span class="nav-number">6.</span> <span class="nav-text">str.replace 字符串替换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用字符串作为参数"><span class="nav-number">6.1.</span> <span class="nav-text">使用字符串作为参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#指定一个函数作为参数"><span class="nav-number">6.2.</span> <span class="nav-text">指定一个函数作为参数</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-substring-返回字符串两个索引之间（或到字符串末尾）的子串"><span class="nav-number">7.</span> <span class="nav-text">str.substring() 返回字符串两个索引之间（或到字符串末尾）的子串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-slice-提取字符串的一部分，并返回这个新的字符串"><span class="nav-number">8.</span> <span class="nav-text">str.slice() 提取字符串的一部分，并返回这个新的字符串</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#str-length-返回一个字符串的长度"><span class="nav-number">1.</span> <span class="nav-text">str.length 返回一个字符串的长度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-charAt-index-返回字符串中指定位置的字符。"><span class="nav-number">2.</span> <span class="nav-text">str.charAt(index) 返回字符串中指定位置的字符。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-indexOf-返回指定值在字符串对象中首次出现的位置"><span class="nav-number">3.</span> <span class="nav-text">str.indexOf() 返回指定值在字符串对象中首次出现的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-search-看该字符串对象与一个正则表达式是否匹配。"><span class="nav-number">4.</span> <span class="nav-text">str.search() 看该字符串对象与一个正则表达式是否匹配。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-match-当字符串匹配到正则表达式时，提取匹配项"><span class="nav-number">5.</span> <span class="nav-text">str.match() 当字符串匹配到正则表达式时，提取匹配项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-replace-字符串替换"><span class="nav-number">6.</span> <span class="nav-text">str.replace 字符串替换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用字符串作为参数"><span class="nav-number">6.1.</span> <span class="nav-text">使用字符串作为参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#指定一个函数作为参数"><span class="nav-number">6.2.</span> <span class="nav-text">指定一个函数作为参数</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-substring-返回字符串两个索引之间（或到字符串末尾）的子串"><span class="nav-number">7.</span> <span class="nav-text">str.substring() 返回字符串两个索引之间（或到字符串末尾）的子串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str-slice-提取字符串的一部分，并返回这个新的字符串"><span class="nav-number">8.</span> <span class="nav-text">str.slice() 提取字符串的一部分，并返回这个新的字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#substr-方法返回字符串中从指定位置开始到指定长度的子字符串。"><span class="nav-number">9.</span> <span class="nav-text">substr() 方法返回字符串中从指定位置开始到指定长度的子字符串。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#split-通过把字符串分割成子字符串来把一个-String-对象分割成一个字符串数组。"><span class="nav-number">10.</span> <span class="nav-text">split() 通过把字符串分割成子字符串来把一个 String 对象分割成一个字符串数组。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#toLowerCase-装换成小写字母并返回"><span class="nav-number">11.</span> <span class="nav-text">toLowerCase() 装换成小写字母并返回</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#toUpperCase-装换成大写字母并返回"><span class="nav-number">12.</span> <span class="nav-text">toUpperCase() 装换成大写字母并返回</span></a></li></ol></div>
             
           </div>
         </section>

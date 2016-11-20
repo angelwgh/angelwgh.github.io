@@ -1,0 +1,1014 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="javascript," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="创建数组12var arr = new Array()var arr = []
+arr.length1array.length
+返回一个数组的长度
+
+可以通过减小 length 属性的值来截短一个数组，但不能通过增大 length 属性的值来延长这个数组，也就是说，如果你将一个拥有两个元素的数组的 length 属性设置为 3，那么这个数组仍然只包含两个元素，最后一个元素不存在。因此， lengt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组Array方法">
+<meta property="og:url" content="http://yoursite.com/2016/11/20/数组Array方法/index.html">
+<meta property="og:site_name" content="angelwgh's blog">
+<meta property="og:description" content="创建数组12var arr = new Array()var arr = []
+arr.length1array.length
+返回一个数组的长度
+
+可以通过减小 length 属性的值来截短一个数组，但不能通过增大 length 属性的值来延长这个数组，也就是说，如果你将一个拥有两个元素的数组的 length 属性设置为 3，那么这个数组仍然只包含两个元素，最后一个元素不存在。因此， lengt">
+<meta property="og:updated_time" content="2016-11-20T13:29:17.330Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数组Array方法">
+<meta name="twitter:description" content="创建数组12var arr = new Array()var arr = []
+arr.length1array.length
+返回一个数组的长度
+
+可以通过减小 length 属性的值来截短一个数组，但不能通过增大 length 属性的值来延长这个数组，也就是说，如果你将一个拥有两个元素的数组的 length 属性设置为 3，那么这个数组仍然只包含两个元素，最后一个元素不存在。因此， lengt">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/20/数组Array方法/"/>
+
+
+  <title> 数组Array方法 | angelwgh's blog </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">angelwgh's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-practice">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            练习
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                数组Array方法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-20T20:20:56+08:00" content="2016-11-20">
+              2016-11-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/20/数组Array方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/20/数组Array方法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var arr = new Array()</div><div class="line">var arr = []</div></pre></td></tr></table></figure>
+<h3 id="arr-length"><a href="#arr-length" class="headerlink" title="arr.length"></a>arr.length</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.length</div></pre></td></tr></table></figure>
+<p>返回一个数组的长度</p>
+<blockquote>
+<p>可以通过减小 length 属性的值来截短一个数组，但不能通过增大 length 属性的值来延长这个数组，也就是说，如果你将一个拥有两个元素的数组的 length 属性设置为 3，那么这个数组仍然只包含两个元素，最后一个元素不存在。因此， length属性不能真正表示数组中定义的值的数目。</p>
+</blockquote>
+<h3 id="arr-indexOf"><a href="#arr-indexOf" class="headerlink" title="arr.indexOf()"></a>arr.indexOf()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.indexOf(searchElement[, fromIndex = 0])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>searchElement<ul>
+<li>要查找的元素</li>
+</ul>
+</li>
+<li>fromIndex<br>  *开始查找的位置。如果该索引值大于或等于数组长度，意味着不会在数组里查找，返回-1。如果参数中提供的索引值是一个负值，则将其作为数组末尾的一个抵消，即-1表示从最后一个元素开始查找，-2表示从倒数第二个元素开始查找 ，以此类推。 注意：如果参数中提供的索引值是一个负值，仍然从前向后查询数组。如果抵消后的索引值仍小于0，则整个数组都将会被查询。其默认值为0.</li>
+</ul>
+</li>
+<li>返回值<ul>
+<li>首个被找到的元素在数组中的索引位置; 若没有找到则返回 -1</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-forEach"><a href="#arr-forEach" class="headerlink" title="arr.forEach()"></a>arr.forEach()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.forEach(callback[, thisArg])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>callback<ul>
+<li>函数为每个元素执行，接收三个参数：</li>
+</ul>
+</li>
+<li>currentValue(当前值)<ul>
+<li>数组中正在处理的当前元素。</li>
+</ul>
+</li>
+<li>index(索引)<ul>
+<li>数组中正在处理的当前元素的索引。</li>
+</ul>
+</li>
+<li>array<ul>
+<li>正在应用forEach()数组。。</li>
+</ul>
+</li>
+<li>thisArg可选<ul>
+<li>可选参数。当执行回调 函数时用作this的值(参考对象)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>描述<ul>
+<li>forEach 方法按升序为数组中含有效值的每一项执行一次callback 函数，那些已删除（使用delete方法等情况）或者从未赋值的项将被跳过（但不包括那些值为 undefined 的项）。</li>
+<li>callback 函数会被依次传入三个参数：<ul>
+<li>数组当前项的值</li>
+<li>数组当前项的索引</li>
+<li>数组对象本身</li>
+</ul>
+</li>
+<li>如果给forEach传递了thisArg 参数，它将作为 callback 函数的执行上下文，类似执行如下函数callback.call(thisArg, element, index, array)。如果 thisArg 值为 undefined 或 null，函数的 this 值取决于当前执行环境是否为严格模式（严格模式下为 undefined，非严格模式下为全局对象）。</li>
+</ul>
+</li>
+</ul>
+<p>forEach 遍历的范围在第一次调用 callback 前就会确定。调用forEach 后添加到数组中的项不会被 callback 访问到。如果已经存在的值被改变，则传递给 callback 的值是 forEach 遍历到他们那一刻的值。已删除的项不会被遍历到。</p>
+<h3 id="arr-reverse"><a href="#arr-reverse" class="headerlink" title="arr.reverse()"></a>arr.reverse()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.reverse()</div></pre></td></tr></table></figure>
+<ul>
+<li>描述<ul>
+<li>reverse 方法颠倒数组中元素的位置，并返回该数组的引用。</li>
+<li>修改原数组</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-sort（）"><a href="#arr-sort（）" class="headerlink" title="arr.sort（）"></a>arr.sort（）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.sort([compareFunction])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>compareFunction<ul>
+<li>可选。用来指定按某种顺序进行排列的函数。如果省略，元素按照转换为的字符串的诸个字符的Unicode位点进行排序。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果指明了 compareFunction ，那么数组会按照调用该函数的返回值排序。记 a 和 b 是两个将要被比较的元素：</p>
+<ul>
+<li>如果 compareFunction(a, b) 小于 0 ，那么 a 会被排列到 b 之前；</li>
+<li>如果 compareFunction(a, b) 等于 0 ， a 和 b 的相对位置不变。备注： ECMAScript 标准并不保证这一行为，而且也不是所有浏览器都会遵守（例如 Mozilla 在 2003 年之前的版本）；</li>
+<li>如果 compareFunction(a, b) 大于 0 ， b 会被排列到 a 之前。</li>
+<li>compareFunction(a, b) 必须总是对相同的输入返回相同的比较结果，否则排序的结果将是不确定的。</li>
+</ul>
+<h3 id="arr-push"><a href="#arr-push" class="headerlink" title="arr.push()"></a>arr.push()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.push(element1, ..., elementN)</div></pre></td></tr></table></figure>
+<p>添加一个或多个元素到数组的末尾，并返回数组新的长度（length 属性值）。</p>
+<ul>
+<li>参数<ul>
+<li>elementN<ul>
+<li>被添加到数组末尾的元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回值<ul>
+<li>当调用该方法时，新的 length 属性值将被返回。</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li>push 方法把值添加到数组中。</li>
+</ul>
+<p>push 方法有意具有通用性。该方法和 call() 或 apply() 一起使用时，可应用在类似数组的对象上。push 方法根据 length 属性来决定从哪里开始插入给定的值。如果 length 不能被转成一个数值，则插入的元素索引为 0，包括 length 不存在时。当 length 不存在时，将会创建它。</p>
+<h3 id="arr-unshift"><a href="#arr-unshift" class="headerlink" title="arr.unshift()"></a>arr.unshift()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.unshift(element1, ..., elementN)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>法在数组的开头添加一个或者多个元素，并返回数组新的 length 值。</p>
+<ul>
+<li>参数<ul>
+<li>elementN<ul>
+<li>被添加到数组开头的元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>返回值</p>
+<ul>
+<li>当调用该方法时，新的 length 属性值将被返回。</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li>unshift 方法会在调用它的类数组（array-like）对象的开始位置插入给定的参数。</li>
+</ul>
+</li>
+</ul>
+<p>unshift 特意被设计成具有通用性；这个方法能够通过 call 或 apply 方法作用于类似数组的对象上。不过对于没有 length 属性（代表从0开始的一系列连续的数字属性的最后一个）的对象，调用该方法可能没有任何意义。</p>
+<h3 id="arr-shift"><a href="#arr-shift" class="headerlink" title="arr.shift()"></a>arr.shift()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.shift</div></pre></td></tr></table></figure>
+<p>删除数组的第一个元素并返回</p>
+<ul>
+<li><p>描述</p>
+<ul>
+<li><p>shift 方法移除索引为 0 的元素(即第一个元素)，并返回被移除的元素，其他元素的索引值随之减 1。如果 length 属性的值为 0 (长度为 0)，则返回 undefined。</p>
+</li>
+<li><p>shift 方法并不局限于数组：该方法亦可通过 call 或 apply 作用于对象上。对于不包含 length 属性的对象，将添加一个值为 0 的 length 属性。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-pop"><a href="#arr-pop" class="headerlink" title="arr.pop()"></a>arr.pop()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.pop()</div></pre></td></tr></table></figure>
+<p>删除数组的最后一个元素并返回</p>
+<ul>
+<li><p>描述</p>
+<ul>
+<li><p>pop 方法删除一个数组中的最后一个元素，并且把这个删除掉的元素返回给调用者。</p>
+</li>
+<li><p>pop 被有意设计成具有通用性，该方法可以通过 call 或 apply 方法应用于一个类数组（array-like）对象上。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-splice"><a href="#arr-splice" class="headerlink" title="arr.splice()"></a>arr.splice()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.splice(start, deleteCount[, item1[, item2[, ...]]])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>start​<ul>
+<li>从数组的哪一位开始修改内容。如果超出了数组的长度，则从数组末尾开始添加内容；如果是负值，则表示从数组末位开始的第几位。</li>
+</ul>
+</li>
+<li>deleteCount<ul>
+<li>整数，表示要移除的数组元素的个数。如果 deleteCount 是 0，则不移除元素。这种情况下，至少应添加一个新元素。如果 deleteCount 大于start 之后的元素的总数，则从 start 后面的元素都将被删除（含第 start 位）。</li>
+</ul>
+</li>
+<li>itemN<ul>
+<li>要添加进数组的元素。如果不指定，则 splice() 只删除数组元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>返回值</p>
+<ul>
+<li>由被删除的元素组成的一个数组。如果只删除了一个元素，则返回只包含一个元素的数组。如果没有删除元素，则返回空数组。</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li>如果添加进数组的元素个数不等于被删除的元素个数，数组的长度会发生相应的改变。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>注释：请注意，splice() 方法与 slice() 方法的作用是不同的，splice() 方法会直接对数组进行修改。</p>
+</blockquote>
+<hr>
+<h3 id="arr-slice"><a href="#arr-slice" class="headerlink" title="arr.slice()"></a>arr.slice()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.slice(begin[,edn])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>begin<ul>
+<li>从该索引处开始提取原数组中的元素（从0开始）。</li>
+<li>如果该参数为负数，则表示从原数组中的倒数第几个元素开始提取，slice(-2)表示提取原数组中的倒数第二个元素到最后一个元素（包含最后一个元素）。</li>
+<li>如果省略 begin，则 slice 从索引 0 开始。</li>
+</ul>
+</li>
+<li>end<ul>
+<li>在该索引处结束提取原数组元素（从0开始）。slice会提取原数组中索引从 begin 到 end 的所有元素（包含begin，但不包含end）</li>
+<li>slice(1,4) 提取原数组中的第二个元素开始直到第四个元素的所有元素 （索引为 1, 2, 3的元素）。</li>
+<li>如果该参数为负数， 则它表示在原数组中的倒数第几个元素结束抽取。 slice(-2,-1)表示抽取了原数组中的倒数第二个元素到最后一个元素（不包含最后一个元素，也就是只有倒数第二个元素）。</li>
+<li>如果 end 被省略，则slice 会一直提取到原数组末尾。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回值<ul>
+<li>一个含有提取元素的新数组</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li><p>slice 不修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。原数组的元素会按照下述规则拷贝：</p>
+<ul>
+<li>如果该元素是个对象引用 （不是实际的对象），slice 会拷贝这个对象引用到新的数组里。两个对象引用都引用了同一个对象。如果被引用的对象发生改变，则新的和原来的数组中的这个元素也会发生改变。</li>
+<li>对于字符串、数字及布尔值来说（不是 String、Number 或者 Boolean 对象），slice 会拷贝这些值到新的数组里。在别的数组里修改这些字符串或数字或是布尔值，将不会影响另一个数组。</li>
+</ul>
+</li>
+<li>如果向两个数组任一中添加了新元素，则另一个不会受到影响。</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-concat"><a href="#arr-concat" class="headerlink" title="arr.concat()"></a>arr.concat()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>valueN<ul>
+<li>需要与原数组合并的数组或非数组值。详见下文。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回值<ul>
+<li>新的 Array 实例。</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li><p>concat 方法将创建一个新的数组，然后将调用它的对象(this 指向的对象)中的元素以及所有参数中的数组类型的参数中的元素以及非数组类型的参数本身按照顺序放入这个新数组,并返回该数组.</p>
+</li>
+<li><p>concat 方法并不修改调用它的对象(this 指向的对象) 和参数中的各个数组本身的值,而是将他们的每个元素拷贝一份放在组合成的新数组中.原数组中的元素有两种被拷贝的方式:</p>
+<ul>
+<li>对象引用(非对象直接量):concat 方法会复制对象引用放到组合的新数组里,原数组和新数组中的对象引用都指向同一个实际的对象,所以,当实际的对象被修改时,两个数组也同时会被修改.</li>
+<li>字符串和数字(是原始值,而不是包装原始值的 String 和 Number 对象): concat 方法会复制字符串和数字的值放到新数组里.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-join"><a href="#arr-join" class="headerlink" title="arr.join()"></a>arr.join()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str = arr.join([separator = &apos;,&apos;])</div></pre></td></tr></table></figure>
+<p>join() 方法将数组中的所有元素连接成一个字符串。</p>
+<ul>
+<li>参数<ul>
+<li>separator<ul>
+<li>可选，用于指定连接每个数组元素的分隔符。分隔符会被转成字符串类型；如果省略的话，默认为一个逗号。如果 seprator 是一个空字符串，那么数组中的所有元素将被直接连接。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>描述<ul>
+<li>所有的数组元素被转换成字符串，再用一个分隔符将这些字符串连接起来。如果元素是undefined 或者null， 则会转化成空字符串。</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-map"><a href="#arr-map" class="headerlink" title="arr.map()"></a>arr.map()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.map(callback[, thisArg])</div></pre></td></tr></table></figure>
+<ul>
+<li>参数<ul>
+<li>callback<ul>
+<li>原数组中的元素经过该方法后返回一个新的元素。</li>
+<li>currentValue<ul>
+<li>callback 的第一个参数，数组中当前被传递的元素。</li>
+</ul>
+</li>
+<li>index<ul>
+<li>callback 的第二个参数，数组中当前被传递的元素的索引。</li>
+</ul>
+</li>
+<li>array<ul>
+<li>callback 的第三个参数，调用 map 方法的数组。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>thisArg<ul>
+<li>执行 callback 函数时 this 指向的对象。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>返回值</p>
+<ul>
+<li>由回调函数的返回值组成的新数组。</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li><p>map 方法会给原数组中的每个元素都按顺序调用一次 callback 函数。callback 每次执行后的返回值（包括 undefined）组合起来形成一个新数组。 callback 函数只会在有值的索引上被调用；那些从来没被赋过值或者使用 delete 删除的索引则不会被调用。</p>
+</li>
+<li><p>callback 函数会被自动传入三个参数：数组元素，元素索引，原数组本身。</p>
+</li>
+<li><p>如果 thisArg 参数有值，则每次 callback 函数被调用的时候，this 都会指向 thisArg 参数上的这个对象。如果省略了 thisArg 参数,或者赋值为 null 或 undefined，则 this 指向全局对象 。</p>
+</li>
+<li><p>map 不修改调用它的原数组本身（当然可以在 callback 执行时改变原数组）。</p>
+</li>
+<li><p>使用 map 方法处理数组时，数组元素的范围是在 callback 方法第一次调用之前就已经确定了。在 map 方法执行的过程中：原数组中新增加的元素将不会被 callback 访问到；若已经存在的元素被改变或删除了，则它们的传递到 callback 的值是 map 方法遍历到它们的那一时刻的值；而被删除的元素将不会被访问到。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="arr-reduce"><a href="#arr-reduce" class="headerlink" title="arr.reduce()"></a>arr.reduce()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr.reduce(callback,[initialValue])</div></pre></td></tr></table></figure>
+<p>接收一个函数作为累加器（accumulator），数组中的每个值（从左到右）开始合并，最终为一个值。</p>
+<ul>
+<li><p>参数</p>
+<ul>
+<li>callback<ul>
+<li>执行数组中每个值的函数，包含四个参数</li>
+<li>previousValue<ul>
+<li>上一次调用回调返回的值，或者是提供的初始值（initialValue）</li>
+</ul>
+</li>
+<li>currentValue<ul>
+<li>数组中当前被处理的元素</li>
+</ul>
+</li>
+<li>index<ul>
+<li>当前元素在数组中的索引</li>
+</ul>
+</li>
+<li>array<ul>
+<li>调用 reduce 的数组</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>initialValue<ul>
+<li>作为第一次调用 callback 的第一个参数。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>描述</p>
+<ul>
+<li><p>reduce 为数组中的每一个元素依次执行回调函数，不包括数组中被删除或从未被赋值的元素，接受四个参数：初始值（或者上一次回调函数的返回值），当前元素值，当前索引，调用 reduce 的数组。</p>
+</li>
+<li><p>回调函数第一次执行时，previousValue 和 currentValue 的取值有两种情况，如果 initialValue 在调用 reduce 时被提供，那么第一个 previousValue 等于 initialValue ，并且currentValue 等于数组中的第一个值；如果initialValue 未被提供，那么previousValue 等于数组中的第一个值，currentValue等于数组中的第二个值。</p>
+</li>
+<li><p>如果数组为空并且没有提供initialValue， 会抛出TypeError 。如果数组仅有一个元素（无论位置如何）并且没有提供initialValue， 或者有提供initialValue但是数组为空，那么此唯一值将被返回并且callback不会被执行。</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/20/js对象/" rel="next" title="js对象">
+                <i class="fa fa-chevron-left"></i> js对象
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/20/数组Array方法/"
+           data-title="数组Array方法" data-url="http://yoursite.com/2016/11/20/数组Array方法/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="angelwgh" />
+          <p class="site-author-name" itemprop="name">angelwgh</p>
+          <p class="site-description motion-element" itemprop="description">wgh'blog</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/angelwgh" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建数组"><span class="nav-number">1.</span> <span class="nav-text">创建数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-length"><span class="nav-number">2.</span> <span class="nav-text">arr.length</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-indexOf"><span class="nav-number">3.</span> <span class="nav-text">arr.indexOf()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-forEach"><span class="nav-number">4.</span> <span class="nav-text">arr.forEach()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-reverse"><span class="nav-number">5.</span> <span class="nav-text">arr.reverse()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-sort（）"><span class="nav-number">6.</span> <span class="nav-text">arr.sort（）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-push"><span class="nav-number">7.</span> <span class="nav-text">arr.push()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-unshift"><span class="nav-number">8.</span> <span class="nav-text">arr.unshift()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-shift"><span class="nav-number">9.</span> <span class="nav-text">arr.shift()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-pop"><span class="nav-number">10.</span> <span class="nav-text">arr.pop()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-splice"><span class="nav-number">11.</span> <span class="nav-text">arr.splice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-slice"><span class="nav-number">12.</span> <span class="nav-text">arr.slice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-concat"><span class="nav-number">13.</span> <span class="nav-text">arr.concat()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-join"><span class="nav-number">14.</span> <span class="nav-text">arr.join()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-map"><span class="nav-number">15.</span> <span class="nav-text">arr.map()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arr-reduce"><span class="nav-number">16.</span> <span class="nav-text">arr.reduce()</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">angelwgh</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"angelwgh"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
