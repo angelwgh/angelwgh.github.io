@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -84,19 +84,88 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="类型
+原始(值)类型
+Undefined
+Null
+Boolean
+String
+Number
+Object
+
+
+对象（引用）类型
+Object
+Array
+Date
+…
+
+
+
+
+
+对象类型
+浏览器扩展对象 ActiveObject、Debug、VBArry、XML、Script …
+
+
+由于各个浏览器之前这些对象并不通用，因此早起我们的开发者为了开发一个功能，需要针对不同的浏览器设计不同的页面，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/11/14/1/index.html">
+<meta property="og:title" content="js类型进阶">
+<meta property="og:url" content="http://yoursite.com/2016/11/23/js类型进阶/index.html">
 <meta property="og:site_name" content="angelwgh's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-11-14T11:39:55.675Z">
+<meta property="og:description" content="类型
+原始(值)类型
+Undefined
+Null
+Boolean
+String
+Number
+Object
+
+
+对象（引用）类型
+Object
+Array
+Date
+…
+
+
+
+
+
+对象类型
+浏览器扩展对象 ActiveObject、Debug、VBArry、XML、Script …
+
+
+由于各个浏览器之前这些对象并不通用，因此早起我们的开发者为了开发一个功能，需要针对不同的浏览器设计不同的页面，">
+<meta property="og:updated_time" content="2016-11-23T12:34:09.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="js类型进阶">
+<meta name="twitter:description" content="类型
+原始(值)类型
+Undefined
+Null
+Boolean
+String
+Number
+Object
+
+
+对象（引用）类型
+Object
+Array
+Date
+…
+
+
+
+
+
+对象类型
+浏览器扩展对象 ActiveObject、Debug、VBArry、XML、Script …
+
+
+由于各个浏览器之前这些对象并不通用，因此早起我们的开发者为了开发一个功能，需要针对不同的浏览器设计不同的页面，">
 
 
 
@@ -117,10 +186,10 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/14/1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/23/js类型进阶/"/>
 
 
-  <title> Hello World | angelwgh's blog </title>
+  <title> js类型进阶 | angelwgh's blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +339,7 @@ Quick">
             
             
               
-                Hello World
+                js类型进阶
               
             
           </h1>
@@ -282,19 +351,38 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-14T19:39:55+08:00" content="2016-11-14">
-              2016-11-14
+            <time itemprop="dateCreated" datetime="2016-11-23T18:09:43+08:00" content="2016-11-23">
+              2016-11-23
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/14/1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/14/1/" itemprop="commentsCount"></span>
+                <a href="/2016/11/23/js类型进阶/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/23/js类型进阶/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -317,15 +405,137 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><ul>
+<li>原始(值)类型<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>String</li>
+<li>Number</li>
+<li>Object</li>
+</ul>
+</li>
+<li>对象（引用）类型<ul>
+<li>Object<ul>
+<li>Array</li>
+<li>Date</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><ol>
+<li>浏览器扩展对象<br> ActiveObject、Debug、VBArry、XML、Script …</li>
+</ol>
+<blockquote>
+<p>由于各个浏览器之前这些对象并不通用，因此早起我们的开发者为了开发一个功能，需要针对不同的浏览器设计不同的页面，随着ECMA和w3c一系列规范的发展，这些浏览器扩展对象正在慢慢消失或者弃用。稍作了解</p>
+</blockquote>
+<ol>
+<li>宿主对象<br> window、document、navigator…</li>
+</ol>
+<blockquote>
+<p>提供了DOM和BOM操作的API，需要深入了解</p>
+</blockquote>
+<ol>
+<li>原声对象</li>
+</ol>
+<ul>
+<li>构造函数（通过构造函数创建的对象）<ul>
+<li>Boolean</li>
+<li>String</li>
+<li>Number</li>
+<li>Object</li>
+<li>Function</li>
+<li>Array</li>
+<li>Date</li>
+<li>RegExp</li>
+<li>Error</li>
+</ul>
+</li>
+<li>对象<ul>
+<li>Math</li>
+<li>JSON</li>
+<li>全局对象</li>
+<li>arguments</li>
+</ul>
+</li>
+</ul>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><ul>
+<li>隐式类型转换<ul>
+<li>数字和字符串作’+’操作时，数字隐式地转化成字符串<ul>
+<li><code>2+&#39;1&#39;   //&#39;21&#39;</code></li>
+</ul>
+</li>
+<li>其他运算符字符串会隐式地转化成字数字<ul>
+<li><code>2-&#39;1&#39;   //1</code></li>
+</ul>
+</li>
+<li>数字、字符串进行’.’操作时会转成对象类型<ul>
+<li><code>(3.1415).toFixed(2)    // 3.14</code></li>
+</ul>
+</li>
+<li>隐式类型转化出现的场景<ul>
+<li>数字运算符</li>
+<li>. 操作符</li>
+<li>if语句</li>
+<li>== 双等号</li>
+</ul>
+</li>
+<li>隐式类型转化结果<ul>
+<li>undefined转化成Number时结果为NaN</li>
+<li>null转化成Number时结果为0</li>
+<li>“”转化成Boolean时结果为false</li>
+<li>带有非数字字符的字符串转成Number是结果都为NaN</li>
+<li>NaN转成Boolean时结果为false</li>
+<li>所有对象转成boolean结果都是true</li>
+<li>所有对象转成Number结果都是NaN</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>显式类型转换<ul>
+<li>NuMber(x) 把x转成数字</li>
+<li>String(x) 把X转成字符串</li>
+<li>Boolean(x) 把x转成布尔值</li>
+<li>paseInt()、paseFloat()</li>
+<li>!、!! 转成布尔值</li>
+</ul>
+</li>
+</ul>
+<h3 id="类型识别"><a href="#类型识别" class="headerlink" title="类型识别"></a>类型识别</h3><ul>
+<li>typeof<ul>
+<li>是一个操作符，typeof “a” typeof(“a”)</li>
+<li>可以识别标准类型(Null除外)</li>
+<li>不能识别具体的对象类型，但可以识别Function</li>
+</ul>
+</li>
+<li>instanceof<ul>
+<li>能识别所有对象留下</li>
+<li>不能判别原始类型<ul>
+<li><code>[] instanceof Array   //true</code></li>
+<li><code>/s/ instanceof RegExp   //true</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Object.prototype.toString.call</p>
+<ul>
+<li>可识别标准类型以及内置对象类型</li>
+<li>不能识别自定义对象类型<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function type(obj)&#123;</div><div class="line">   return Object.prototype.toString.call(obj).slice(8,-1)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>constructor</p>
+<ul>
+<li>识别标准类型(undefind和nunll除外)</li>
+<li>识别内置对象类型</li>
+<li>识别自定义对象类型</li>
+</ul>
+</li>
+<li>识别所有类型函数封装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function getConstructorName(obj)&#123;</div><div class="line">    return (obj===undefined||obj===null)?obj:(obj.constructor&amp;&amp;obj.constructor.toString().match(/function\s*([^(]*)/)[1]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -346,22 +556,24 @@ Quick">
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/28/test-1/" rel="next" title="hexo 使用说明">
-                <i class="fa fa-chevron-left"></i> hexo 使用说明
+              <a href="/2016/11/21/js正则表达式/" rel="next" title="js正则表达式">
+                <i class="fa fa-chevron-left"></i> js正则表达式
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/14/CSS动画/" rel="prev" title="CSS动画">
-                CSS动画 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -387,8 +599,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/14/1/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/11/14/1/">
+      <div class="ds-thread" data-thread-key="2016/11/23/js类型进阶/"
+           data-title="js类型进阶" data-url="http://yoursite.com/2016/11/23/js类型进阶/">
       </div>
     
   </div>
@@ -490,7 +702,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#类型"><span class="nav-number">1.</span> <span class="nav-text">类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型"><span class="nav-number">2.</span> <span class="nav-text">对象类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型转换"><span class="nav-number">3.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型识别"><span class="nav-number">4.</span> <span class="nav-text">类型识别</span></a></li></ol></div>
             
           </div>
         </section>
